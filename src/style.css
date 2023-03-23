@@ -5,6 +5,13 @@ body{
     background-color: #3a3a4a;
 }
 
+.flex-col{
+    display: flex;flex-direction: column;
+}
+.center{
+    justify-content: center;
+    place-items: center;
+}
 .container{
     position: absolute;
     left: 0;
@@ -38,12 +45,58 @@ body{
     width: 300px;
     height: 100%;
     background-color: #161d2a;
+    justify-content:start ;
+    transition: 500ms;
 }
 
-.flex-col{
-    display: flex;flex-direction: column;
-}
-.center{
-    justify-content: center;
+
+.side-bar-menu button{
+    width: 80%;
+    height: 50px;
+    border:none;
+    border-radius: 10px;
+    margin-top: 30px;
+    background-color: transparent;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: end;
     place-items: center;
+    color:white;
+    gap: 10px;
+    font-size: 14px;
+    font-family: 'Noto Sans Arabic', sans-serif;
+    font-weight: 600;
+    pointer-events: all;
+    transition: 500ms;
+    cursor: pointer;
+}
+
+.side-bar-menu button:hover{
+    background-color: #10151f;
+}
+
+.side-bar-menu button svg{
+    width: 25px;
+    margin-right: 10px;
+}
+
+#side-bar-name{
+    position: relative;
+    width: 80%;
+    height: 10%;
+    border-bottom: 1px;
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    place-items: center;
+    color:white;
+    flex-direction: row-reverse;
+    gap: 10px;
+    font-family: 'Noto Sans Arabic', sans-serif;
+    font-weight: 800;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.144);
+}
+
+#side-bar-name svg{
+    width: 30px;
 }
