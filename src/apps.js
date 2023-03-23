@@ -12,3 +12,15 @@ sidebar_button.addEventListener('click',
         }
     }
 )
+
+var buttons = document.querySelectorAll('.side-bar-menu>button');
+
+for(let i = 0; i<buttons.length; i++){
+    buttons[i].addEventListener('click', function(){
+        for(let index = 0; index < buttons.length; index++){
+            // alert(buttons[index])
+            buttons[index].removeAttribute("active");
+        }
+        buttons[i].setAttribute("active", true);
+    })
+}

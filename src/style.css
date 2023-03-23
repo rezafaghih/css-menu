@@ -49,6 +49,11 @@ body{
     transition: 500ms;
 }
 
+hr{
+    position: relative;
+    width: 100%;
+    opacity: 0.5;
+}
 
 .side-bar-menu button{
     width: 80%;
@@ -69,6 +74,10 @@ body{
     pointer-events: all;
     transition: 500ms;
     cursor: pointer;
+}
+
+.side-bar-menu button[active]{
+    background-color: #242f42;
 }
 
 .side-bar-menu button:hover{
